@@ -1,0 +1,242 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Comic Sans MS;
+}
+.navbar{
+    background-color: white;                                        
+}
+.nav-link{
+    color: black;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+}
+.nav-link:hover{
+    color: white;
+    background-color: black;
+}
+.navbar-brand{
+    font-size: 1.25rem;
+    font-weight: 800;
+    color:black;
+    cursor:pointer;
+    text-decoration: none;  
+}
+.main{
+    background: url(image/20.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    color:white;
+}   
+.main h3{
+    font-size: 3rem;
+    font-weight: 600;
+}
+.main h6{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    line-height: 2;
+    border-bottom: 2px solid #31caa4;
+    width: 30%;
+}
+.main  .bt1{
+    height: 55px;
+    width: 138px;
+    background-color: #31caa4;
+    color: white;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+
+}
+.main .bt1:hover{
+    background-color: rgb(163, 86, 235);
+    transition: 0.7s;
+}
+.h1{
+    font-size: 3rem;
+    font-weight: 900;
+}
+.h4{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.btn3{
+        background-color: black;
+        color: white;
+        outline: none;
+        border: none;
+        height: 40px;
+        width: 140px;
+        border-radius: 4px;
+}
+.btn3:hover{
+    background: white;
+    color: black;
+    transition: 0.4s;
+    border: 1px solid black;
+}
+.control ul li{
+   list-style: none;
+   background-color: black;
+   padding: 5px 15px;
+   color: white;
+   display: inline-block;
+   cursor: pointer;
+}
+.control ul li:hover{
+    background-color: rgb(163, 86, 235);
+    transition: 0.5s;
+}
+.text{
+    font-size: 1.4rem;
+}
+.link{
+    font-size: 1.4rem;
+    position: relative;
+    top: auto;
+}
+.item{
+    position: relative;
+}
+.item span{
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    font-size: 40px;
+    color: rgb(245, 245, 245);
+    cursor: pointer;
+    opacity: 0;
+}
+.item:hover span{
+    opacity: 1;
+    transition: 0.5s;
+}
+.item:hover span{
+    opacity: 1;
+    transition: 0.5s;
+}
+.item::before{
+    content: "";
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(238, 235, 230, 0.644);
+    opacity: 0;
+    position:absolute;
+}
+.item:hover::before{
+    opacity: 1;
+    transition: 0.3s;
+}
+.progress-title{
+    width: 100%;
+    height: auto;
+}
+.progress-title{
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+    margin: 0 0 20px;
+}
+.progress{
+    height: 20px;
+    background:#171b3c ;
+    border-radius: 20px;
+    border: 1px solid #000;
+    box-shadow: 0 2px 2px #31caa4;
+    margin-bottom: 40px;
+    overflow: visible;
+    position: relative;
+}
+.progress .progress-bar{
+    border-radius: 20px;
+    border: 1px solid black;
+    animation: animation-positive 2s;
+}
+.progress  .progress-value{
+    width: 65px;
+    height: 25px;
+    line-height: 25px;
+    background: black;
+    font-size: 15px;
+    color: #31caa4;
+    border-radius:  0 0 15px 15px;
+    border: 1px solid black;
+    border-top: none;
+    box-shadow: 0 2px 2px black;
+    position: absolute;
+    bottom: -25px;
+    right: 60px;
+}
+@keyframes turn {
+    from {
+    transform: rotate3d(0, 0, 0, 0);
+    }
+    to {
+    transform: rotate3d(1, 1, 0, 360deg);
+    }
+    }
+    .cube {
+    width: 20px;
+    height: 20px;
+    transform-style: preserve-3d;
+    animation: turn 5s linear infinite;
+    margin-top: -520px;
+    position: relative;
+    left: 50px;
+    }
+    .face {
+    width: 50px;
+    height: 50px;
+    background: #31caa4;
+    border: 2px solid white;
+    position: absolute;
+    opacity: 0.75;
+    transform: translateZ(25px);
+    }
+    .front {
+    transform: translateZ(25px);
+    }
+    .back {
+    transform: translateZ(-25px) rotateY(180deg);
+    }
+    .left {
+    transform: translateX(-25px) rotateY(-90deg);
+    }
+    .right {
+    transform: translateX(25px) rotateY(90deg);
+    }
+    .top {
+    transform: translateY(-25px) rotateX(90deg);
+    }
+    .bottom {
+    transform: translateY(25px) rotateX(-90deg);
+    }
+  
+    .cube .face a i{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .cube .face a{
+      text-decoration: none;
+    }
+    .cube:hover{
+        animation-play-state: paused;
+        cursor: pointer;
+    }
+
+
+
+
+
